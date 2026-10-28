@@ -145,5 +145,442 @@
     "Analyst-scenario discounted expected payoff": 2.237034107489453,
     "CRR risk-neutral lattice value": 8.332308324678896,
     "Observed market midpoint": 8.35
+  },
+  "extended": {
+    "valuation_upside": {
+      "Current market": 0.0,
+      "Comparable companies": 0.05208333333333326,
+      "Student DCF": 0.10416666666666674,
+      "Analyst median": 0.05208333333333326
+    },
+    "dcf": {
+      "terminal_value": 26284.3425254592,
+      "pv_terminal": 17480.281700702257,
+      "enterprise_value": 22667.152998831778,
+      "equity_value": 21167.152998831778,
+      "value_per_share": 105.8357649941589,
+      "terminal_share_of_ev": 0.771172352416872,
+      "wacc": 0.085,
+      "terminal_growth": 0.025,
+      "reported_dcf_value": 106.0,
+      "reconciliation_gap": -0.16423500584110684,
+      "projection": [
+        {
+          "year": 1,
+          "revenue": 11232.0,
+          "ebit": 2021.76,
+          "nopat": 1597.1904,
+          "fcff": 1118.0332799999999,
+          "discount_factor": 0.9216589861751152,
+          "pv_fcff": 1030.4454193548386
+        },
+        {
+          "year": 2,
+          "revenue": 12018.240000000002,
+          "ebit": 2223.3744,
+          "nopat": 1756.4657760000002,
+          "fcff": 1229.5260432,
+          "discount_factor": 0.8494552867973413,
+          "pv_fcff": 1044.4273976512561
+        },
+        {
+          "year": 3,
+          "revenue": 12739.334400000002,
+          "ebit": 2420.4735360000004,
+          "nopat": 1912.1740934400004,
+          "fcff": 1338.5218654080002,
+          "discount_factor": 0.7829080984307294,
+          "pv_fcff": 1047.93960835453
+        },
+        {
+          "year": 4,
+          "revenue": 13376.301120000002,
+          "ebit": 2608.3787184000003,
+          "nopat": 2060.6191875360005,
+          "fcff": 1442.4334312752003,
+          "discount_factor": 0.7215742842679533,
+          "pv_fcff": 1040.8228707765707
+        },
+        {
+          "year": 5,
+          "revenue": 13911.353164800003,
+          "ebit": 2782.2706329600005,
+          "nopat": 2197.9938000384004,
+          "fcff": 1538.5956600268803,
+          "discount_factor": 0.6650454232884362,
+          "pv_fcff": 1023.2360019923275
+        }
+      ],
+      "sensitivity": {
+        "g=2.0%": {
+          "WACC=7.5%": 118.54413775648747,
+          "WACC=8.0%": 107.80346105258981,
+          "WACC=8.5%": 98.71902741619947,
+          "WACC=9.0%": 90.93584487277698,
+          "WACC=9.5%": 84.19358817313983
+        },
+        "g=2.5%": {
+          "WACC=7.5%": 129.01778544139432,
+          "WACC=8.0%": 116.37098939730811,
+          "WACC=8.5%": 105.8357649941589,
+          "WACC=9.0%": 96.92474572551619,
+          "WACC=9.5%": 89.28981478828356
+        },
+        "g=3.0%": {
+          "WACC=7.5%": 141.81891038961388,
+          "WACC=8.0%": 126.6520234109701,
+          "WACC=8.5%": 114.24645485902009,
+          "WACC=9.0%": 103.9117967203786,
+          "WACC=9.5%": 95.17007626729558
+        }
+      }
+    },
+    "distribution_diagnostics": {
+      "skewness": 0.30665259572011827,
+      "excess_kurtosis": -0.0702356589068236,
+      "q1": 95.0,
+      "q3": 109.0,
+      "iqr": 14.0,
+      "coefficient_of_variation": 0.1145998358397543,
+      "lower_fence": 74.0,
+      "upper_fence": 130.0,
+      "tukey_outliers": [],
+      "lowest_target": 82.0,
+      "highest_target": 126.0,
+      "share_above_spot": 0.6666666666666666,
+      "share_above_strike": 0.3333333333333333,
+      "publication_span_days": 14
+    },
+    "weight_sensitivity": {
+      "disclosed": 2.2370341074894524,
+      "equal": 3.7092702295124256,
+      "data_implied": 2.727779481497111
+    },
+    "data_implied_weights": {
+      "Severe bear": 0.13333333333333333,
+      "Bear": 0.26666666666666666,
+      "Base": 0.26666666666666666,
+      "Bull": 0.2,
+      "Tail": 0.13333333333333333
+    },
+    "kde": {
+      "value": 3.680545677327455,
+      "bootstrap_95ci": [
+        0.8816157539531937,
+        7.065141449320008
+      ],
+      "prob_itm": 0.3939,
+      "n_sim": 20000,
+      "seed": 42,
+      "histogram": {
+        "counts": [
+          1,
+          6,
+          10,
+          23,
+          46,
+          85,
+          155,
+          226,
+          319,
+          455,
+          511,
+          662,
+          751,
+          898,
+          990,
+          1126,
+          1258,
+          1336,
+          1274,
+          1253,
+          1222,
+          1141,
+          949,
+          883,
+          748,
+          685,
+          582,
+          476,
+          436,
+          363,
+          345,
+          243,
+          205,
+          141,
+          97,
+          56,
+          28,
+          9,
+          2,
+          4
+        ],
+        "edges": [
+          63.47867991241565,
+          65.49380240494955,
+          67.50892489748344,
+          69.52404739001733,
+          71.53916988255123,
+          73.55429237508513,
+          75.56941486761903,
+          77.58453736015292,
+          79.59965985268681,
+          81.6147823452207,
+          83.62990483775461,
+          85.6450273302885,
+          87.6601498228224,
+          89.6752723153563,
+          91.69039480789019,
+          93.70551730042409,
+          95.72063979295798,
+          97.73576228549189,
+          99.75088477802578,
+          101.76600727055967,
+          103.78112976309356,
+          105.79625225562745,
+          107.81137474816136,
+          109.82649724069526,
+          111.84161973322915,
+          113.85674222576304,
+          115.87186471829693,
+          117.88698721083084,
+          119.90210970336473,
+          121.91723219589863,
+          123.93235468843253,
+          125.94747718096642,
+          127.9625996735003,
+          129.9777221660342,
+          131.99284465856812,
+          134.007967151102,
+          136.0230896436359,
+          138.0382121361698,
+          140.05333462870368,
+          142.06845712123757,
+          144.0835796137715
+        ]
+      }
+    },
+    "black_scholes": {
+      "price": 8.326169509370636,
+      "d1": -0.06218628103459697,
+      "d2": -0.342186281034597,
+      "delta": 0.4695388352929914,
+      "vega_per_vol_point": 0.37768525290239546,
+      "risk_neutral_prob_itm": 0.3661053544507573,
+      "crr_minus_bsm": 0.006138815308259993,
+      "benchmark_pass": true
+    },
+    "mispricing": {
+      "market_mid_minus_crr": 0.017691675321103162,
+      "market_mid_vs_crr_pct": 0.0021232622019882186,
+      "crr_inside_bid_ask": true,
+      "bid_ask_spread": 0.5,
+      "spread_pct_of_mid": 0.059880239520958084,
+      "market_mid_minus_belief_value": 6.112965892510546,
+      "market_mid_minus_kde_value": 4.669454322672545,
+      "implied_vol_bid": 0.2740102663871833,
+      "implied_vol_mid": 0.2806309445333667,
+      "implied_vol_ask": 0.28724834825852885,
+      "implied_minus_input_vol": 0.0006309445333666508
+    },
+    "sensitivity": {
+      "volatility": [
+        {
+          "input": 0.18000000000000002,
+          "price": 4.587149492382558
+        },
+        {
+          "input": 0.23000000000000004,
+          "price": 6.447068686517224
+        },
+        {
+          "input": 0.28,
+          "price": 8.332308324678896
+        },
+        {
+          "input": 0.33,
+          "price": 10.209606935799346
+        },
+        {
+          "input": 0.38,
+          "price": 12.121629464547825
+        }
+      ],
+      "risk_free_rate": [
+        {
+          "input": 0.024999999999999998,
+          "price": 7.617303668519417
+        },
+        {
+          "input": 0.034999999999999996,
+          "price": 7.969891167037573
+        },
+        {
+          "input": 0.045,
+          "price": 8.332308324678896
+        },
+        {
+          "input": 0.055,
+          "price": 8.704495516534612
+        },
+        {
+          "input": 0.065,
+          "price": 9.086376963901463
+        }
+      ],
+      "strike": [
+        {
+          "input": 94.5,
+          "price": 12.732567064076816
+        },
+        {
+          "input": 99.75,
+          "price": 10.32792563481026
+        },
+        {
+          "input": 105.0,
+          "price": 8.332308324678896
+        },
+        {
+          "input": 110.25,
+          "price": 6.66196330368655
+        },
+        {
+          "input": 115.50000000000001,
+          "price": 5.280447141138175
+        }
+      ],
+      "maturity_years": [
+        {
+          "input": 0.5,
+          "price": 4.717414938058749
+        },
+        {
+          "input": 0.75,
+          "price": 6.646005130860503
+        },
+        {
+          "input": 1.0,
+          "price": 8.332308324678896
+        },
+        {
+          "input": 1.25,
+          "price": 9.840375841000705
+        },
+        {
+          "input": 1.5,
+          "price": 11.257560912330387
+        }
+      ],
+      "spot": [
+        {
+          "input": 86.4,
+          "price": 4.496291953243743
+        },
+        {
+          "input": 91.19999999999999,
+          "price": 6.252931559645547
+        },
+        {
+          "input": 96.0,
+          "price": 8.332308324678896
+        },
+        {
+          "input": 100.80000000000001,
+          "price": 10.734956531823869
+        },
+        {
+          "input": 105.60000000000001,
+          "price": 13.484503629115203
+        }
+      ]
+    },
+    "maturity_alignment": {
+      "analyst_horizon_years": 1.0,
+      "option_maturity_years": 1.0,
+      "alignment_gap_years": 0.0,
+      "aligned": true,
+      "message": "Analyst horizon and option maturity are aligned."
+    },
+    "source_audit": {
+      "documented_inputs": 8,
+      "synthetic_inputs": [
+        "Spot price",
+        "Risk-free rate",
+        "Dividend yield",
+        "Volatility",
+        "Option bid",
+        "Option ask"
+      ],
+      "missing_url": [
+        "Spot price",
+        "Risk-free rate",
+        "Dividend yield",
+        "Volatility",
+        "Option bid",
+        "Option ask"
+      ],
+      "analyst_targets_synthetic": true,
+      "complete": false
+    },
+    "model_risk": [
+      {
+        "check": "Horizon alignment",
+        "status": "pass",
+        "detail": "Analyst horizon and option maturity are aligned."
+      },
+      {
+        "check": "Put-call parity",
+        "status": "pass",
+        "detail": "Residual -4.80e-14"
+      },
+      {
+        "check": "Lattice convergence",
+        "status": "pass",
+        "detail": "200 vs 500 step gap -0.0015"
+      },
+      {
+        "check": "Black-Scholes benchmark",
+        "status": "pass",
+        "detail": "CRR minus BSM +0.0061"
+      },
+      {
+        "check": "Analyst vs. option volatility",
+        "status": "warn",
+        "detail": "Analyst log dispersion 11.4% vs CRR horizon volatility 28.0%"
+      },
+      {
+        "check": "Scenario-weight robustness",
+        "status": "warn",
+        "detail": "Five-state value ranges $2.24 to $3.71 across weighting schemes"
+      },
+      {
+        "check": "Analyst outliers",
+        "status": "pass",
+        "detail": "Tukey outliers: none"
+      },
+      {
+        "check": "Bid-ask liquidity",
+        "status": "pass",
+        "detail": "Spread is 6.0% of midpoint"
+      },
+      {
+        "check": "Source documentation",
+        "status": "warn",
+        "detail": "Synthetic or unsourced inputs remain; replace before submission"
+      },
+      {
+        "check": "Terminal-value concentration",
+        "status": "warn",
+        "detail": "Terminal value is 77% of DCF enterprise value"
+      }
+    ],
+    "volatility_card": {
+      "input": 0.28,
+      "type": "implied",
+      "implied_from_mid": 0.2806309445333667,
+      "analyst_log_dispersion": 0.11428825106416798,
+      "vega_per_vol_point": 0.37768525290239546
+    }
   }
 }
